@@ -5,7 +5,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Nikita is so cool BOY",
    LoadingSubtitle = "by Ixroevich",
    ConfigurationSaving = {
-      Enabled = true,
+      Enabled = false,
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "Big Hub"
    },
