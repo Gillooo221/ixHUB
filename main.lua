@@ -6,7 +6,7 @@ if game.PlaceId == 8737899170 then
     GameLoad = "PET99"
 end
 local var,err = pcall(function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/" .. GameLoad .. ".lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gillooo221/ixHUB/main/" .. GameLoad .. ".lua"))()
 end)
 
 if var == false  then
