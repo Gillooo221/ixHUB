@@ -1,11 +1,11 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Gillooo221/ixHUB/main/Library'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Pet Simulator 99 ixHUB",
-   LoadingTitle = "Nikita is so cool BOY",
-   LoadingSubtitle = "by Ixroevich",
+   Name = "Rayfield Example Window",
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
    ConfigurationSaving = {
-      Enabled = false,
+      Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "Big Hub"
    },
