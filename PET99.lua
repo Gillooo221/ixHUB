@@ -26,5 +26,17 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-
-local Label = Tab:CreateLabel("Label Example")
+Rayfield:Notify({
+   Title = "Successfully",
+   Content = "Pet Simulator 99 ║ ixHUB",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
