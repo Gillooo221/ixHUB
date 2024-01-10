@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Pet Simulator 99 ║ ixHUB",
+   Name = "Bee Swarm Simulator ║ ixHUB",
    LoadingTitle = "NIKITA SO COOL BOY....",
    LoadingSubtitle = "by Ixroevich",
    ConfigurationSaving = {
@@ -28,7 +28,7 @@ local Window = Rayfield:CreateWindow({
 
 Rayfield:Notify({
    Title = "Successfully",
-   Content = "Pet Simulator 99 ║ ixHUB",
+   Content = "Bee Swarm Simulator ║ ixHUB",
    Duration = 6.5,
    Image = 4483362458,
    Actions = {
@@ -39,4 +39,14 @@ Rayfield:Notify({
       end
    },
 },
+})
+
+local Tab = Window:CreateTab("Teleport", 4483362458)
+local Section = Tab:CreateSection("Select Location")
+
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
 })
