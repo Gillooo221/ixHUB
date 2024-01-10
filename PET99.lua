@@ -18,9 +18,9 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "ixHUB ║ Key System",
       Subtitle = "Gleb is so fucked up that he made a key system",
-      Note = "The key can be obtained from the Discord server",
+      Note = "The key can be obtained from the Discord server: \nhttps://discord.gg/E7cx9RtUXh",
       FileName = "KeyPet99", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      SaveKey = True, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = {"Nikitos"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
