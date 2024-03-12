@@ -47,6 +47,11 @@ local Section = Tab:CreateSection("Select Location")
 local Button = Tab:CreateButton({
    Name = "Dandelion field",
    Callback = function()
-      GetService("Workspace").Xroy_YT.HumanoidRootPart.CFrame = CFrame.new(-32.2860985, 4.76142693, 228.406296, 0.998530924, -2.09128341e-08, -0.0541844517, 1.66791505e-08, 1, -7.85868721e-08, 0.0541844517, 7.75676696e-08, 0.998530924)
+      local args = {
+    [1] = "FruitVendingMachine1",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Network.VendingMachines_Purchase:InvokeServer(unpack(args))
    end,
 })
