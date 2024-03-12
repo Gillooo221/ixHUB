@@ -1,5 +1,4 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local LibraryApi = loadstring(game:HttpGet('https://raw.githubusercontent.com/Gillooo221/Library/main/ApiLua.lua'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Bee Swarm Simulator ║ ixHUB",
