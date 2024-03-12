@@ -41,17 +41,34 @@ Rayfield:Notify({
 },
 })
 
-local Tab = Window:CreateTab("Teleport", 4483362458)
+local Tab = Window:CreateTab("AutoFarm", 4483362458)
 local Section = Tab:CreateSection("Select Location")
 
 local Button = Tab:CreateButton({
-   Name = "Dandelion field",
-   Callback = function()
-      local args = {
-    [1] = "FruitVendingMachine1",
-    [2] = 1
+   Name = "Auto VendingMachine",
+   Callback = function() --- начало
+function sleep(seconds)
+    os.execute("sleep " .. seconds)
+end
+local args = {
+    [1] = "Cherry Blossom"
 }
+game:GetService("ReplicatedStorage").Network.Teleports_RequestTeleport:InvokeServer(unpack(args))
+   end, --- конец
+})
 
-game:GetService("ReplicatedStorage").Network.VendingMachines_Purchase:InvokeServer(unpack(args))
-   end,
+local Tab = Window:CreateTab("Player", 4483362458)
+local Section = Tab:CreateSection("Select Location")
+
+local Button = Tab:CreateButton({
+   Name = "Aus",
+   Callback = function() --- начало
+function sleep(seconds)
+    os.execute("sleep " .. seconds)
+end
+local args = {
+    [1] = "Cherry Blossom"
+}
+game:GetService("ReplicatedStorage").Network.Teleports_RequestTeleport:InvokeServer(unpack(args))
+   end, --- конец
 })
