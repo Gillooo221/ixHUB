@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Bee Swarm Simulator ║ ixHUB",
+   Name = "Pet Simulator 99 ║ ixHUB",
    LoadingTitle = "NIKITA SO COOL BOY....",
    LoadingSubtitle = "by Ixroevich",
    ConfigurationSaving = {
@@ -22,13 +22,13 @@ local Window = Rayfield:CreateWindow({
       FileName = "KeyPet99",
       SaveKey = True,
       GrabKeyFromSite = false,
-      Key = {"Nikitos"}
+      Key = {"Test"}
    }
 })
 
 Rayfield:Notify({
    Title = "Successfully",
-   Content = "Bee Swarm Simulator ║ ixHUB",
+   Content = "Pet Simulator 99 ║ ixHUB",
    Duration = 6.5,
    Image = 4483362458,
    Actions = {
