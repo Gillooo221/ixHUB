@@ -1,4 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local api = loadstring(game:HttpGet('https://raw.githubusercontent.com/Gillooo221/Library/main/ApiLua.lua'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Bee Swarm Simulator ║ ixHUB",
@@ -41,28 +42,83 @@ Rayfield:Notify({
 },
 })
 
-local Tab = Window:CreateTab("AutoFarm", 4483362458)
-local Section = Tab:CreateSection("Select Location")
-
-local Button = Tab:CreateButton({
-   Name = "AutoFarm SunFlower",
-   Callback = function() --- начало
-function(7, -219.71196, 4.75390339, 158.496765, 0.987253964, -1.90416927e-09, 0.159152925, -1.04668638e-08, 1, 7.68922206e-08, -0.159152925, -7.75779796e-08, 0.987253964)
-   end, --- конец
-})
-
-local Tab = Window:CreateTab("Player", 4483362458)
-local Section = Tab:CreateSection("Select Location")
-
-local Button = Tab:CreateButton({
-   Name = "Aus",
-   Callback = function() --- начало
-function sleep(seconds)
-    os.execute("sleep " .. seconds)
-end
+local Tab = Window:CreateTab("Auto", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Auto Dispensers")
+local Toggle = Tab:CreateToggle({
+   Name = "Honey Dispenser",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(Value)
 local args = {
-    [1] = "Cherry Blossom"
+    [1] = "Honey Dispenser"
 }
-game:GetService("ReplicatedStorage").Network.Teleports_RequestTeleport:InvokeServer(unpack(args))
-   end, --- конец
+game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer(unpack(args))
+   end,
+})
+local Toggle = Tab:CreateToggle({
+   Name = "Strawberry Dispenser",
+   CurrentValue = false,
+   Flag = "Toggle2",
+   Callback = function(Value)
+local args = {
+    [1] = "Strawberry Dispenser"
+}
+game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer(unpack(args))
+   end,
+})
+local Toggle = Tab:CreateToggle({
+   Name = "Treat Dispenser",
+   CurrentValue = false,
+   Flag = "Toggle3",
+   Callback = function(Value)
+local args = {
+    [1] = "Treat Dispenser"
+}
+game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer(unpack(args))
+   end,
+})
+local Toggle = Tab:CreateToggle({
+   Name = "Blueberry Dispenser",
+   CurrentValue = false,
+   Flag = "Toggle4",
+   Callback = function(Value)
+local args = {
+    [1] = "Blueberry Dispenser"
+}
+game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Auto Field Boosters")
+local Toggle = Tab:CreateToggle({
+   Name = "Blue Field Booster",
+   CurrentValue = false,
+   Flag = "Toggle4",
+   Callback = function(Value)
+local args = {
+    [1] = "Blue Field Booster"
+}
+game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer(unpack(args))
+   end,
+})
+local Toggle = Tab:CreateToggle({
+   Name = "Red Field Booster",
+   CurrentValue = false,
+   Flag = "Toggle4",
+   Callback = function(Value)
+local args = {
+    [1] = "Red Field Booster"
+}
+game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer(unpack(args))
+   end,
+})
+local Toggle = Tab:CreateToggle({
+   Name = "White Field Booster",
+   CurrentValue = false,
+   Flag = "Toggle4",
+   Callback = function(Value)
+local args = {
+    [1] = "Field Booster"
+}
+game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer(unpack(args))
+   end,
 })
