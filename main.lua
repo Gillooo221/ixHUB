@@ -1,7 +1,6 @@
 local GameLoad = nil
-local PlaceId = {
-8737899170
-}
+local PlaceId = nil
+
 if game.PlaceId == 8737899170 then
     GameLoad = "PET99"
 end
@@ -11,6 +10,7 @@ end
 if game.PlaceId == 1537690962 then
     GameLoad = "BSS"
 end
+
 local var,err = pcall(function ()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Gillooo221/ixHUB/main/" .. GameLoad .. ".lua"))()
 end)
